@@ -623,7 +623,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const productName = modalProductTitle.textContent
         const quantity = productQty.value
 
-        alert(`¡${productName} (${quantity}) agregado al carrito!`)
+        let url = "https://wa.me/+584129627765?text=Hola Para Pedir " + productName + " Cantidad: " + quantity
+        window.location.href = url
 
         // Cerrar modal después de agregar al carrito
         modal.style.display = "none"
